@@ -75,12 +75,12 @@ max_height: <number>
 
 {% if back_to_basics %}
   <div class="image-element__wrap" style="{{ background_color }}{{ crop_to_aspect_ratio }};">
-      <img  alt="{{ alt | escape }}" src="{{ image | img_url: '2000x' }}"
+      <img  alt="{{ alt | escape }}" data-src="{{ image | img_url: '2000x' }}"
             {% if inline_style %}
               style="{{ inline_style }}"
             {% endif %}
             {% if additional_classes %}
-              class="{{ additional_classes }}"
+              class="lazy2 {{ additional_classes }}"
             {% endif %}
       />
   </div>
@@ -89,7 +89,7 @@ max_height: <number>
 <div class="image-element__wrap" style="{{ background_color }}{{ crop_to_aspect_ratio }} {% unless stretch_width == true or object_fit %}max-width: {{ image.width }}px;{% endunless %}">
   <img  alt="{{ alt | escape }}"
         {% if low_quality_image %}
-          src="{{ low_quality_image }}"
+          data-src="{{ low_quality_image }}"
         {% endif %}
         data-src="{{ image | img_url: '1600x' }}"
         data-sizes="auto"
@@ -98,7 +98,7 @@ max_height: <number>
         height="{{ image.height }}"
         width="{{ image.width }}"
         style="{{ inline_style }};"
-        class="lazyload transition--{{ settings.image_loading_style }} {{ additional_classes }}"
+        class="lazy2 lazyload transition--{{ settings.image_loading_style }} {{ additional_classes }}"
   />
 </div>
 {% endif %}
