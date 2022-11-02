@@ -1946,7 +1946,7 @@
       "1627498687a31b655c": {
         "type": "featured-collection",
         "settings": {
-          "title": "Best Sellers",
+          "title": "PRODUCTS",
           "collection_description": false,
           "collection": "frontpage",
           "collection_style": "grid",
@@ -2060,11 +2060,11 @@
     },
     "content_for_index": [
       "1489125525070",
+      "3bc7166f-dfc3-4afd-8c29-372e93360d41",
       "1627498687a31b655c",
       "1489126345371",
       "16274980873328cf56",
-      "162749809001a830b3",
-      "3bc7166f-dfc3-4afd-8c29-372e93360d41"
+      "162749809001a830b3"
     ]
   }
 }
