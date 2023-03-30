@@ -2065,6 +2065,14 @@
       "1489126345371",
       "16274980873328cf56",
       "162749809001a830b3"
-    ]
+    ],
+    "blocks": {
+      "5134484470793087125": {
+        "type": "shopify:\/\/apps\/vitals-all-in-one-marketing\/blocks\/app-embed\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }
